@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        // Xposed API (de.robv.android.xposed:api)
+        maven { url = uri("https://api.xposed.info/") }
+    }
+}
+
+rootProject.name = "HiddenSettingsInjector"
+include(":app")
