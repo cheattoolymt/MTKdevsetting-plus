@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:label="Hidden Settings Injector"
+        android:supportsRtl="true">
+
+        <!-- ============ Xposed / LSPosed module metadata ============ -->
+        <!-- Marks this APK as an Xposed module. -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <!-- Short description shown in the LSPosed manager. -->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="設定アプリの開発者向けオプション/システム画面に隠しActivityへのショートカットを追加します (Android 9 / API 28)。" />
+
+        <!-- Minimum Xposed API version this module was compiled against. -->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+        <!-- Declares this module as compatible with the modern (LSPosed) scope
+             handling. Recommended for LSPosed. -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposed_scope" />
+    </application>
+
+</manifest>
